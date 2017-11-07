@@ -4,7 +4,7 @@ namespace Cardumen\ArgentinaProvinciasLocalidades;
 
 use Illuminate\Support\ServiceProvider;
 
-class ArgentinaProvinciasLocalidadesServiceProvider extends ServiceProvider
+class ArgentinaProvinciasLocalidades extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
