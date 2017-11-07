@@ -1,10 +1,10 @@
-#Localidades y Provincias de Argentina para Laravel >= 5.4
+# Localidades y Provincias de Argentina para Laravel >= 5.4
 
 Este paquete crea las migraciones y tablas de paises, provincias y localidades.
 
 También genera un comando para popular estás bases.
 
-#Insctrucciones
+# Insctrucciones
 
 ```
 composer require cardumen/argentina-provincias-localidades:1.0.5
