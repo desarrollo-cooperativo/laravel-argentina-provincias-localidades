@@ -17,7 +17,7 @@ class LaravelArgentinaProvinciasLocalidadesServiceProvider extends ServiceProvid
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Cardumen\LaravelArgentinaProvinciasLocalidades\Commands\CargarProvinciasLocalidades::class,
+                Commands\CargarProvinciasLocalidades::class,
             ]);
         }
     }
