@@ -2151,7 +2151,6 @@ class CargarProvinciasLocalidades extends Command
                 ");
             DB::statement("
                 INSERT INTO `localidades` (`id`, `provincia_id`, `localidad`) VALUES
-                INSERT INTO `localidades` (`id`, `provincia_id`, `localidad`) VALUES
                         (2074, 22, 'Pedro Gómez Cello'),
                         (2075, 22, 'Pérez'),
                         (2076, 22, 'Peyrano'),
