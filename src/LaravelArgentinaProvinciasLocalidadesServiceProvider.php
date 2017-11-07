@@ -1,10 +1,10 @@
 <?php
 
-namespace Cardumen\LaravelArgentinaProvinciasLocalidades;
+namespace Cardumen\ArgentinaProvinciasLocalidades;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelArgentinaProvinciasLocalidadesServiceProvider extends ServiceProvider
+class ArgentinaProvinciasLocalidadesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cardumen\LaravelArgentinaProvinciasLocalidades\Commands;
+namespace Cardumen\ArgentinaProvinciasLocalidades\Commands;
 
 use Illuminate\Console\Command;
 use DB;

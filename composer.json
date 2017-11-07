@@ -1,5 +1,5 @@
 {
-    "name": "cardumen/laravel-argentina-provincias-localidades",
+    "name": "cardumen/argentina-provincias-localidades",
     "description": "Provincias y Localidades de Argentina para Laravel",
     "keywords": ["Localidades","Provincias","Argentina"],
     "homepage": "https://github.com/desarrollo-cooperativo/laravel-argentina-provincias-localidades",
@@ -17,7 +17,7 @@
             },
     "autoload": {
         "psr-4": {
-            "Cardumen\\LaravelArgetinaProvinciasLocalidades\\": "src/"
+            "Cardumen\\ArgetinaProvinciasLocalidades\\": "src/"
         }
     }
 }
