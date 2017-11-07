@@ -1,0 +1,24 @@
+{
+    "name": "cardumen/argentina-provincias-localidades",
+    "description": "Provincias y Localidades de Argentina para Laravel",
+    "keywords": ["Localidades","Provincias","Argentina"],
+    "homepage": "https://github.com/desarrollo-cooperativo/laravel-argentina-provincias-localidades",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrés Teszkiewikcz @ Cardumen",
+            "email": "ateszki@gmail.com",
+            "homepage": "http://cardumen.com.ar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cardumen\\ArgetinaProvinciasLocalidades\\": "src/"
+        }
+    }
+}
