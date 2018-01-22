@@ -17,6 +17,8 @@ class CreateLocalidades extends Migration
             $table->increments('id');
             $table->string('localidad');
             $table->integer('provincia_id')->unsigned();
+            $table->string('lat',100)->nullable();
+            $table->string('lon',100)->nullable();
             $table->timestamps();
             $table->foreign('provincia_id')->references('id')->on('provincias');
         });

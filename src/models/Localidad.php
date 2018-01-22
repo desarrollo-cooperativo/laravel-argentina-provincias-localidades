@@ -13,3 +13,4 @@ class Localidad extends Model
     	return $this->belongsTo(Provincia::class);
     }
 }
+
