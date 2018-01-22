@@ -41,8 +41,9 @@ class CargarProvinciasLocalidades extends Command
     {
         DB::transaction(function () {
             //pais
-            DB::statement("Insert into `paises` (`id`,`pais`) values (1,'Argentina');");
-
+            DB::statement("Insert into `paises` (`id`,`pais`) values (1,'Argentina')
+                ON DUPLICATE KEY UPDATE pais = VALUES(pais)
+                ;");
             //provincias
             DB::statement("INSERT INTO `provincias` (`id`, `provincia`,`pais_id`) VALUES
                     (1, 'Buenos Aires',1),
@@ -844,7 +845,10 @@ class CargarProvinciasLocalidades extends Command
                         (769, 'Pilar', 7, '-31.6781613', '-63.8786458', NULL, NULL),
                         (770, 'Pincén', 7, '-34.8387769', '-63.9165523', NULL, NULL),
                         (771, 'Piquillín', 7, '-31.2992567', '-63.7597143', NULL, NULL),
-                        (772, 'Plaza de Mercedes', 7, '-30.9785748', '-63.2593155', NULL, NULL);
+                        (772, 'Plaza de Mercedes', 7, '-30.9785748', '-63.2593155', NULL, NULL)
+                        ON DUPLICATE KEY UPDATE provincia_id = VALUES(provincia_id), localidad = VALUES(localidad), lat = VALUES(lat), lon = VALUES(lon);
+                        ");
+                        DB::statement("
                         INSERT INTO `localidades` (`id`, `localidad`, `provincia_id`, `lat`, `lon`, `created_at`, `updated_at`) VALUES
                         (773, 'Plaza Luxardo', 7, '-31.3016855', '-62.2300961', NULL, NULL),
                         (774, 'Porteña', 7, '-31.0139185', '-62.0619979', NULL, NULL),
@@ -1598,7 +1602,10 @@ class CargarProvinciasLocalidades extends Command
                         (1570, 'Paso Aguerre', 16, '-39.3369568', '-69.84582', NULL, NULL),
                         (1571, 'Picún Leufú', 16, '-39.5171295', '-69.292049', NULL, NULL),
                         (1572, 'Piedra del Aguila', 16, '-40.0482871', '-70.0754465', NULL, NULL),
-                        (1573, 'Pilo Lil', 16, '-39.6038466', '-70.934253', NULL, NULL);
+                        (1573, 'Pilo Lil', 16, '-39.6038466', '-70.934253', NULL, NULL)
+                        ON DUPLICATE KEY UPDATE provincia_id = VALUES(provincia_id), localidad = VALUES(localidad), lat = VALUES(lat), lon = VALUES(lon);
+                        ");
+                        DB::statement("
                         INSERT INTO `localidades` (`id`, `localidad`, `provincia_id`, `lat`, `lon`, `created_at`, `updated_at`) VALUES
                         (1574, 'Plaza Huincul', 16, '-38.9308121', '-69.2034404', NULL, NULL),
                         (1575, 'Plottier', 16, '-38.9475672', '-68.22885', NULL, NULL),
@@ -2353,7 +2360,10 @@ class CargarProvinciasLocalidades extends Command
                         (2334, 'Los Ralos', 25, '-26.8870919', '-64.9992353', NULL, NULL),
                         (2335, 'Los Sarmientos', 25, '-27.4158642', '-65.6931738', NULL, NULL),
                         (2336, 'Los Sosa', 25, '-26.8230635', '-65.2653833', NULL, NULL),
-                        (2337, 'Lules', 25, '-26.9255515', '-65.337851', NULL, NULL);
+                        (2337, 'Lules', 25, '-26.9255515', '-65.337851', NULL, NULL)
+                        ON DUPLICATE KEY UPDATE provincia_id = VALUES(provincia_id), localidad = VALUES(localidad), lat = VALUES(lat), lon = VALUES(lon);
+                        ");
+                        DB::statement("
                         INSERT INTO `localidades` (`id`, `localidad`, `provincia_id`, `lat`, `lon`, `created_at`, `updated_at`) VALUES
                         (2338, 'M. García Fernández', 25, '-26.9557511', '-65.2719001', NULL, NULL),
                         (2339, 'Manuela Pedraza', 25, '-27.2245545', '-65.3568771', NULL, NULL),

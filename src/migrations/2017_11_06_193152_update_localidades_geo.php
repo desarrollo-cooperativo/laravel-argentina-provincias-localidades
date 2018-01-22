@@ -14,7 +14,6 @@ class UpdateLocalidadesGeo extends Migration
     public function up()
     {
         Schema::table('localidades', function(Blueprint $table){
-            $table->increments('id');
             $table->string('lat',100)->nullable();
             $table->string('lon',100)->nullable();
         });
