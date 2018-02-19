@@ -2409,7 +2409,8 @@ class CargarProvinciasLocalidades extends Command
                         (2379, 'Villa Quinteros', 25, '-27.2529802', '-65.5494212', NULL, NULL),
                         (2380, 'Yánima', 25, '-27.6495081', '-65.6504843', NULL, NULL),
                         (2381, 'Yerba Buena', 25, '-26.8166695', '-65.3166809', NULL, NULL),
-                        (2382, 'Yerba Buena (S)', 25, '-26.8166695', '-65.3166809', NULL, NULL)
+                        (2382, 'Yerba Buena (S)', 25, '-26.8166695', '-65.3166809', NULL, NULL),
+                        (2382, '9 de julio', 1, '-35.4569056', '-60.9177579', NULL, NULL)
                         ON DUPLICATE KEY UPDATE provincia_id = VALUES(provincia_id), localidad = VALUES(localidad), lat = VALUES(lat), lon = VALUES(lon);
                 ");
         });
