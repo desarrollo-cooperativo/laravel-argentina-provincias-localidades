@@ -17,6 +17,7 @@ class CreateProvincias extends Migration
             $table->increments('id');
             $table->string('provincia');
             $table->integer('pais_id')->unsigned();
+            $table->boolean('fav')->default(false);
             $table->timestamps();
             $table->foreign('pais_id')->references('id')->on('paises');
         });
