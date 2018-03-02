@@ -7,7 +7,7 @@ También genera un comando para popular estás bases.
 # Insctrucciones
 
 ```
-composer require cardumen/argentina-provincias-localidades:1.0.5
+composer require cardumen/argentina-provincias-localidades:1.1
 ```
 
 
@@ -29,5 +29,16 @@ Cargar los datos
 php artisan provincias-localidades:cargar
 ```
 
+Destacar
+
+```
+php artisan provincias-localidades:destacar 
+```
+
+Quitar destaque
+
+```
+php artisan provincias-localidades:cargar --quitar
+```
 
 
