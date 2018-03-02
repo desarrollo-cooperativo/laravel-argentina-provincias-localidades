@@ -18,6 +18,7 @@ class ArgentinaProvinciasLocalidades extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Commands\CargarProvinciasLocalidades::class,
+                Commands\DestacarProvinciasLocalidades::class,
             ]);
         }
     }
